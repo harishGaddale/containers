@@ -1,0 +1,5 @@
+1. Pull a base linux image
+2. Install java
+3. Install Maven
+4. Make it as a new image
+5. Push this new image to any registry
