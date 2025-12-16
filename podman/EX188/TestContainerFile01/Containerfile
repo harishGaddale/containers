@@ -1,0 +1,3 @@
+FROM registry.access.redhat.com/ubi9
+RUN dnf install -y nmap
+CMD echo Hello, you are in ubi9 container

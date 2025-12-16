@@ -1,0 +1,3 @@
+#httpd
+FROM docker.io/archlinux:latest
+RUN yum install httpd php -y
