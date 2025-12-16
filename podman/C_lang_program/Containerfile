@@ -1,0 +1,9 @@
+FROM docker.io/library/gcc:latest
+
+WORKDIR /usr/src/app
+
+COPY ./hello.c .
+
+RUN gcc -o hello hello.c
+
+CMD ["./hello"]
