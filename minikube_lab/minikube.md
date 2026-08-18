@@ -1,0 +1,1 @@
+minikube config set rootless true

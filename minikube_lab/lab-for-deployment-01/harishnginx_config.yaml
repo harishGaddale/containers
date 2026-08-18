@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: harishnginx
+  name: harishnginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: harishnginx
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: harishnginx
+    spec:
+      containers:
+      - image: docker.io/library/nginx:latest
+        name: nginx
+        resources: {}
+status: {}
