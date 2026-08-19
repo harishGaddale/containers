@@ -1,0 +1,10 @@
+# with entrypoint as redocly
+# alias redocly='podman run --rm -v $(pwd):/spec:Z -w /spec redocly-cli'
+# redocly lint openapi.yaml
+# redocly --version
+FROM node:22-alpine
+
+RUN npm install -g @redocly/cli \
+    && npm cache clean --force
+
+ENTRYPOINT ["redocly"]

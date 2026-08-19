@@ -1,0 +1,9 @@
+# with entrypoint as sh
+FROM node:22-alpine
+
+RUN npm install -g @redocly/cli \
+    && npm cache clean --force
+
+WORKDIR /spec
+
+ENTRYPOINT ["/bin/sh"]
