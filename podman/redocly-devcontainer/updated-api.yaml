@@ -1,0 +1,27 @@
+openapi: 3.0.3
+info:
+  title: Sample Validation API
+  description: A simple API to test Redocly CLI conversion and validation.
+  version: 1.0.0
+  license:
+    name: MIT
+servers:
+  - url: http://localhost:8080
+    description: Local development server
+security: []
+paths:
+  /users:
+    get:
+      summary: Retrieve a list of users
+      operationId: getUsers
+      responses:
+        '200':
+          description: A successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+        '400':
+          description: Bad request or missing parameters

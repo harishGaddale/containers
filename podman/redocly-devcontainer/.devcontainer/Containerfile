@@ -1,0 +1,5 @@
+FROM mcr.microsoft.com/devcontainers/base:alpine
+
+RUN apk add --no-cache nodejs npm \
+    && npm install -g @redocly/cli \
+    && redocly --version
