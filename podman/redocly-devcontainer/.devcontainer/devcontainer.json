@@ -1,0 +1,6 @@
+{
+  "name": "Redocly CLI Dev Container",
+  "build": {
+    "dockerfile": "Containerfile",
+  }
+}
